@@ -1,0 +1,30 @@
+{
+  "groups": [
+    {
+      "name": "spring.datasource.test",
+      "type": "javax.sql.DataSource",
+      "sourceType": "org.springframework.boot.actuate.autoconfigure.jdbc.DataSourceHealthContributorAutoConfigurationTests$DataSourceConfig",
+      "sourceMethod": "testDataSource()"
+    },
+    {
+      "name": "test",
+      "type": "org.springframework.boot.actuate.autoconfigure.context.properties.ConfigurationPropertiesReportEndpointAutoConfigurationTests$TestProperties",
+      "sourceType": "org.springframework.boot.actuate.autoconfigure.context.properties.ConfigurationPropertiesReportEndpointAutoConfigurationTests$TestProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "test.db-password",
+      "type": "java.lang.String",
+      "sourceType": "org.springframework.boot.actuate.autoconfigure.context.properties.ConfigurationPropertiesReportEndpointAutoConfigurationTests$TestProperties",
+      "defaultValue": "123456"
+    },
+    {
+      "name": "test.my-test-property",
+      "type": "java.lang.String",
+      "sourceType": "org.springframework.boot.actuate.autoconfigure.context.properties.ConfigurationPropertiesReportEndpointAutoConfigurationTests$TestProperties",
+      "defaultValue": "654321"
+    }
+  ],
+  "hints": []
+}

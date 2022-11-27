@@ -1,0 +1,5 @@
+org/springframework/boot/context/properties/migrator/PropertiesMigrationReporter.class
+org/springframework/boot/context/properties/migrator/PropertiesMigrationReport.class
+org/springframework/boot/context/properties/migrator/PropertyMigration.class
+org/springframework/boot/context/properties/migrator/PropertiesMigrationReport$LegacyProperties.class
+org/springframework/boot/context/properties/migrator/PropertiesMigrationListener.class

@@ -1,0 +1,11 @@
+/Users/kcwang/Documents/jrx/spring-boot-2.2.5/spring-boot-project/spring-boot-tools/spring-boot-maven-plugin/src/test/java/org/springframework/boot/maven/IncludeFilterTests.java
+/Users/kcwang/Documents/jrx/spring-boot-2.2.5/spring-boot-project/spring-boot-tools/spring-boot-maven-plugin/src/test/java/org/springframework/boot/maven/PropertiesMergingResourceTransformerTests.java
+/Users/kcwang/Documents/jrx/spring-boot-2.2.5/spring-boot-project/spring-boot-tools/spring-boot-maven-plugin/src/test/java/org/springframework/boot/maven/RunArgumentsTests.java
+/Users/kcwang/Documents/jrx/spring-boot-2.2.5/spring-boot-project/spring-boot-tools/spring-boot-maven-plugin/src/test/java/org/springframework/boot/maven/sample/ClassWithMainMethod.java
+/Users/kcwang/Documents/jrx/spring-boot-2.2.5/spring-boot-project/spring-boot-tools/spring-boot-maven-plugin/src/test/java/org/springframework/boot/maven/DependencyFilterMojoTests.java
+/Users/kcwang/Documents/jrx/spring-boot-2.2.5/spring-boot-project/spring-boot-tools/spring-boot-maven-plugin/src/test/java/org/springframework/boot/maven/EnvVariablesTests.java
+/Users/kcwang/Documents/jrx/spring-boot-2.2.5/spring-boot-project/spring-boot-tools/spring-boot-maven-plugin/src/test/java/org/springframework/boot/maven/ExcludeFilterTests.java
+/Users/kcwang/Documents/jrx/spring-boot-2.2.5/spring-boot-project/spring-boot-tools/spring-boot-maven-plugin/src/test/java/org/springframework/boot/maven/Verify.java
+/Users/kcwang/Documents/jrx/spring-boot-2.2.5/spring-boot-project/spring-boot-tools/spring-boot-maven-plugin/src/test/java/org/springframework/boot/maven/ArtifactsLibrariesTests.java
+/Users/kcwang/Documents/jrx/spring-boot-2.2.5/spring-boot-project/spring-boot-tools/spring-boot-maven-plugin/src/test/java/org/springframework/boot/maven/SystemPropertyFormatterTests.java
+/Users/kcwang/Documents/jrx/spring-boot-2.2.5/spring-boot-project/spring-boot-tools/spring-boot-maven-plugin/src/test/java/org/springframework/boot/maven/sample/ClassWithoutMainMethod.java

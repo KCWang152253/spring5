@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>org.springframework.boot</groupId>
+  <artifactId>spring-boot-loader-tools</artifactId>
+  <versioning>
+    <release>2.2.5.snapshot</release>
+    <versions>
+      <version>2.2.5.snapshot</version>
+    </versions>
+    <lastUpdated>20221127115558</lastUpdated>
+  </versioning>
+</metadata>

@@ -1,0 +1,5 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Sun Nov 27 19:55:58 CST 2022
+spring-boot-loader-tools-2.2.5.snapshot.jar>=
+spring-boot-loader-tools-2.2.5.snapshot.pom>=
+spring-boot-loader-tools-2.2.5.snapshot-sources.jar>=

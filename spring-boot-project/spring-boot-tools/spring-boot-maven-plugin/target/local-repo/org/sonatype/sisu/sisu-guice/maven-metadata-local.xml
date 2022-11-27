@@ -1,0 +1,10 @@
+<metadata>
+  <groupId>org.sonatype.sisu</groupId>
+  <artifactId>sisu-guice</artifactId>
+  <versioning>
+    <versions>
+      <version>3.2.5</version>
+    </versions>
+    <lastUpdated>20221127115558</lastUpdated>
+  </versioning>
+</metadata>

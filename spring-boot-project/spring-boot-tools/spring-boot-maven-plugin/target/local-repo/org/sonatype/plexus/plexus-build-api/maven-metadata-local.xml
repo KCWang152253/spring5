@@ -1,0 +1,10 @@
+<metadata>
+  <groupId>org.sonatype.plexus</groupId>
+  <artifactId>plexus-build-api</artifactId>
+  <versioning>
+    <versions>
+      <version>0.0.7</version>
+    </versions>
+    <lastUpdated>20221127115558</lastUpdated>
+  </versioning>
+</metadata>

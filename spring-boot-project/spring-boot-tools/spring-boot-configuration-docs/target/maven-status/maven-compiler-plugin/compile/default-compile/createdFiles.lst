@@ -1,0 +1,10 @@
+org/springframework/boot/configurationdocs/DocumentOptions$SectionSpec.class
+org/springframework/boot/configurationdocs/SingleConfigurationTableEntry.class
+org/springframework/boot/configurationdocs/DocumentOptions.class
+org/springframework/boot/configurationdocs/CompoundConfigurationTableEntry.class
+org/springframework/boot/configurationdocs/DocumentOptions$Builder.class
+org/springframework/boot/configurationdocs/ConfigurationTable.class
+org/springframework/boot/configurationdocs/ConfigurationMetadataDocumentWriter.class
+org/springframework/boot/configurationdocs/ConfigurationTableEntry.class
+org/springframework/boot/configurationdocs/AsciidocBuilder.class
+org/springframework/boot/configurationdocs/DocumentOptions$1.class

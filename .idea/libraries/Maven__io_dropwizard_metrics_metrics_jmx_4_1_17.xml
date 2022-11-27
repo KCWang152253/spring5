@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: io.dropwizard.metrics:metrics-jmx:4.1.17">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../maven/apache-maven-3.3.9/repository/io/dropwizard/metrics/metrics-jmx/4.1.17/metrics-jmx-4.1.17.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../../maven/apache-maven-3.3.9/repository/io/dropwizard/metrics/metrics-jmx/4.1.17/metrics-jmx-4.1.17-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../maven/apache-maven-3.3.9/repository/io/dropwizard/metrics/metrics-jmx/4.1.17/metrics-jmx-4.1.17-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

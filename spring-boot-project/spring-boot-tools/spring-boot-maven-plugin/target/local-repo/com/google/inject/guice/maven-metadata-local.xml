@@ -1,0 +1,10 @@
+<metadata>
+  <groupId>com.google.inject</groupId>
+  <artifactId>guice</artifactId>
+  <versioning>
+    <versions>
+      <version>4.0</version>
+    </versions>
+    <lastUpdated>20221127115558</lastUpdated>
+  </versioning>
+</metadata>

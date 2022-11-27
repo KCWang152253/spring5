@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="main"  >
+<target name="main">
+  <taskdef resource="net/sf/antcontrib/antcontrib.properties"/>
+  <taskdef classname="ise.antelope.tasks.StringUtilTask" name="stringutil"/>
+  <var name="scoop-version" value="2.2.5.snapshot"/>
+  <propertyregex input="${scoop-version}" regexp="(.*)\..*" property="scoop-version" replace="\1" override="true"/>
+  <var name="version-type" value="2.2.5.snapshot"/>
+  <propertyregex input="${version-type}" regexp=".*\.(.*)" property="version-type" replace="\1" override="true"/>
+  <propertyregex input="${version-type}" regexp="(M)\d+" property="version-type" replace="MILESTONE" override="true"/>
+  <propertyregex input="${version-type}" regexp="(RC)\d+" property="version-type" replace="MILESTONE" override="true"/>
+  <propertyregex input="${version-type}" regexp="BUILD-(.*)" property="version-type" replace="SNAPSHOT" override="true"/>
+  <stringutil string="${version-type}" property="repo">
+    <lowercase/>
+  </stringutil>
+  <checksum file="/Users/kcwang/Documents/jrx/spring-boot-2.2.5/spring-boot-project/spring-boot-cli/target/spring-boot-cli-2.2.5.snapshot-bin.zip" property="hash" algorithm="sha-256"/>
+  <echo message="Customizing scoop for 2.2.5.snapshot with hash ${hash} in ${repo} repo"/>
+  <copy file="/Users/kcwang/Documents/jrx/spring-boot-2.2.5/spring-boot-project/spring-boot-cli/src/main/scoop/springboot.json" tofile="/Users/kcwang/Documents/jrx/spring-boot-2.2.5/spring-boot-project/spring-boot-cli/target/scoop/springboot.json" overwrite="true">
+    <filterchain>
+      <expandproperties>
+        <propertyset>
+          <propertyref name="scoop-version"/>
+          <propertyref name="hash"/>
+          <propertyref name="repo"/>
+          <propertyref name="project.version"/>
+        </propertyset>
+      </expandproperties>
+    </filterchain>
+  </copy>
+  <attachartifact file="/Users/kcwang/Documents/jrx/spring-boot-2.2.5/spring-boot-project/spring-boot-cli/target/scoop/springboot.json" classifier="scoop" type="json"/>
+</target>
+</project>

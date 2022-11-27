@@ -1,0 +1,10 @@
+<metadata>
+  <groupId>org.codehaus.plexus</groupId>
+  <artifactId>plexus-archiver</artifactId>
+  <versioning>
+    <versions>
+      <version>3.7.0</version>
+    </versions>
+    <lastUpdated>20221127115558</lastUpdated>
+  </versioning>
+</metadata>

@@ -1,0 +1,16 @@
+org/springframework/boot/configurationmetadata/ConfigurationMetadataGroup.class
+org/springframework/boot/configurationmetadata/ValueProvider.class
+org/springframework/boot/configurationmetadata/Deprecation.class
+org/springframework/boot/configurationmetadata/SimpleConfigurationMetadataRepository.class
+org/springframework/boot/configurationmetadata/ValueHint.class
+org/springframework/boot/configurationmetadata/ConfigurationMetadataSource.class
+org/springframework/boot/configurationmetadata/ConfigurationMetadataHint.class
+org/springframework/boot/configurationmetadata/ConfigurationMetadataProperty.class
+org/springframework/boot/configurationmetadata/ConfigurationMetadataRepository.class
+org/springframework/boot/configurationmetadata/RawConfigurationMetadata.class
+org/springframework/boot/configurationmetadata/ConfigurationMetadataRepositoryJsonBuilder.class
+org/springframework/boot/configurationmetadata/JsonReader.class
+org/springframework/boot/configurationmetadata/SentenceExtractor.class
+org/springframework/boot/configurationmetadata/Deprecation$Level.class
+org/springframework/boot/configurationmetadata/ConfigurationMetadataItem.class
+org/springframework/boot/configurationmetadata/Hints.class

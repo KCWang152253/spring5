@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: io.rsocket:rsocket-transport-netty:1.0.3">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../maven/apache-maven-3.3.9/repository/io/rsocket/rsocket-transport-netty/1.0.3/rsocket-transport-netty-1.0.3.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../../maven/apache-maven-3.3.9/repository/io/rsocket/rsocket-transport-netty/1.0.3/rsocket-transport-netty-1.0.3-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../maven/apache-maven-3.3.9/repository/io/rsocket/rsocket-transport-netty/1.0.3/rsocket-transport-netty-1.0.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

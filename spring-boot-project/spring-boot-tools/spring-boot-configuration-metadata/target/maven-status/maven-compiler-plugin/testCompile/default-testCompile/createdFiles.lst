@@ -1,0 +1,4 @@
+org/springframework/boot/configurationmetadata/AbstractConfigurationMetadataTests.class
+org/springframework/boot/configurationmetadata/JsonReaderTests.class
+org/springframework/boot/configurationmetadata/SentenceExtractorTests.class
+org/springframework/boot/configurationmetadata/ConfigurationMetadataRepositoryJsonBuilderTests.class
