@@ -488,6 +488,20 @@
       "defaultValue": "10000ms"
     },
     {
+      "name": "spring.jta.atomikos.properties.recovery.delay",
+      "type": "java.time.Duration",
+      "description": "Delay between two recovery scans.",
+      "sourceType": "org.springframework.boot.jta.atomikos.AtomikosProperties$Recovery",
+      "defaultValue": "10000ms"
+    },
+    {
+      "name": "spring.jta.atomikos.properties.recovery.forget-orphaned-log-entries-delay",
+      "type": "java.time.Duration",
+      "description": "Delay after which recovery can cleanup pending ('orphaned') log entries.",
+      "sourceType": "org.springframework.boot.jta.atomikos.AtomikosProperties$Recovery",
+      "defaultValue": "86400000ms"
+    },
+    {
       "name": "spring.jta.atomikos.properties.recovery.forget-orphaned-log-entries-delay",
       "type": "java.time.Duration",
       "description": "Delay after which recovery can cleanup pending ('orphaned') log entries.",
@@ -500,6 +514,20 @@
       "description": "Number of retry attempts to commit the transaction before throwing an exception.",
       "sourceType": "org.springframework.boot.jta.atomikos.AtomikosProperties$Recovery",
       "defaultValue": 5
+    },
+    {
+      "name": "spring.jta.atomikos.properties.recovery.max-retries",
+      "type": "java.lang.Integer",
+      "description": "Number of retry attempts to commit the transaction before throwing an exception.",
+      "sourceType": "org.springframework.boot.jta.atomikos.AtomikosProperties$Recovery",
+      "defaultValue": 5
+    },
+    {
+      "name": "spring.jta.atomikos.properties.recovery.retry-interval",
+      "type": "java.time.Duration",
+      "description": "Delay between retry attempts.",
+      "sourceType": "org.springframework.boot.jta.atomikos.AtomikosProperties$Recovery",
+      "defaultValue": "10000ms"
     },
     {
       "name": "spring.jta.atomikos.properties.recovery.retry-interval",
