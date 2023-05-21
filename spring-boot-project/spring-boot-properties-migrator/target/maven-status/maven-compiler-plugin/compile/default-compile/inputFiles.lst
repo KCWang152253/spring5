@@ -1,5 +1,5 @@
-/Users/kcwang/Documents/jrx/spring-boot-2.2.5/spring-boot-project/spring-boot-properties-migrator/src/main/java/org/springframework/boot/context/properties/migrator/package-info.java
-/Users/kcwang/Documents/jrx/spring-boot-2.2.5/spring-boot-project/spring-boot-properties-migrator/src/main/java/org/springframework/boot/context/properties/migrator/PropertiesMigrationReport.java
-/Users/kcwang/Documents/jrx/spring-boot-2.2.5/spring-boot-project/spring-boot-properties-migrator/src/main/java/org/springframework/boot/context/properties/migrator/PropertyMigration.java
-/Users/kcwang/Documents/jrx/spring-boot-2.2.5/spring-boot-project/spring-boot-properties-migrator/src/main/java/org/springframework/boot/context/properties/migrator/PropertiesMigrationReporter.java
-/Users/kcwang/Documents/jrx/spring-boot-2.2.5/spring-boot-project/spring-boot-properties-migrator/src/main/java/org/springframework/boot/context/properties/migrator/PropertiesMigrationListener.java
+/Users/kcwang/java/springboot/spring-boot-project/spring-boot-properties-migrator/src/main/java/org/springframework/boot/context/properties/migrator/PropertiesMigrationReport.java
+/Users/kcwang/java/springboot/spring-boot-project/spring-boot-properties-migrator/src/main/java/org/springframework/boot/context/properties/migrator/PropertiesMigrationListener.java
+/Users/kcwang/java/springboot/spring-boot-project/spring-boot-properties-migrator/src/main/java/org/springframework/boot/context/properties/migrator/PropertiesMigrationReporter.java
+/Users/kcwang/java/springboot/spring-boot-project/spring-boot-properties-migrator/src/main/java/org/springframework/boot/context/properties/migrator/package-info.java
+/Users/kcwang/java/springboot/spring-boot-project/spring-boot-properties-migrator/src/main/java/org/springframework/boot/context/properties/migrator/PropertyMigration.java

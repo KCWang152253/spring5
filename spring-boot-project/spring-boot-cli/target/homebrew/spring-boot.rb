@@ -4,7 +4,7 @@ class SpringBoot < Formula
   homepage 'https://spring.io/projects/spring-boot'
   url 'https://repo.spring.io/snapshot/org/springframework/boot/spring-boot-cli/2.2.5.snapshot/spring-boot-cli-2.2.5.snapshot-bin.tar.gz'
   version '2.2.5.snapshot'
-  sha256 '36b4e4f8029b554545b74048e6ce271626ad73595b1e1d361b558008f206f325'
+  sha256 '6c56ef40e24726d270ce24c93d0cd3ec8ccfa9dc494671100945e57209df73cf'
   head 'https://github.com/spring-projects/spring-boot.git'
 
   if build.head?

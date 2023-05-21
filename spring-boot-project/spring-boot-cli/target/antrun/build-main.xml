@@ -13,9 +13,9 @@
   <stringutil string="${version-type}" property="repo">
     <lowercase/>
   </stringutil>
-  <checksum file="/Users/kcwang/Documents/jrx/spring-boot-2.2.5/spring-boot-project/spring-boot-cli/target/spring-boot-cli-2.2.5.snapshot-bin.zip" property="hash" algorithm="sha-256"/>
+  <checksum file="/Users/kcwang/java/springboot/spring-boot-project/spring-boot-cli/target/spring-boot-cli-2.2.5.snapshot-bin.zip" property="hash" algorithm="sha-256"/>
   <echo message="Customizing scoop for 2.2.5.snapshot with hash ${hash} in ${repo} repo"/>
-  <copy file="/Users/kcwang/Documents/jrx/spring-boot-2.2.5/spring-boot-project/spring-boot-cli/src/main/scoop/springboot.json" tofile="/Users/kcwang/Documents/jrx/spring-boot-2.2.5/spring-boot-project/spring-boot-cli/target/scoop/springboot.json" overwrite="true">
+  <copy file="/Users/kcwang/java/springboot/spring-boot-project/spring-boot-cli/src/main/scoop/springboot.json" tofile="/Users/kcwang/java/springboot/spring-boot-project/spring-boot-cli/target/scoop/springboot.json" overwrite="true">
     <filterchain>
       <expandproperties>
         <propertyset>
@@ -27,6 +27,6 @@
       </expandproperties>
     </filterchain>
   </copy>
-  <attachartifact file="/Users/kcwang/Documents/jrx/spring-boot-2.2.5/spring-boot-project/spring-boot-cli/target/scoop/springboot.json" classifier="scoop" type="json"/>
+  <attachartifact file="/Users/kcwang/java/springboot/spring-boot-project/spring-boot-cli/target/scoop/springboot.json" classifier="scoop" type="json"/>
 </target>
 </project>

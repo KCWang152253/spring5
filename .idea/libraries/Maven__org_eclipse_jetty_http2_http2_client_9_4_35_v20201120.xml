@@ -1,13 +1,13 @@
 <component name="libraryTable">
   <library name="Maven: org.eclipse.jetty.http2:http2-client:9.4.35.v20201120">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../../maven/apache-maven-3.3.9/repository/org/eclipse/jetty/http2/http2-client/9.4.35.v20201120/http2-client-9.4.35.v20201120.jar!/" />
+      <root url="jar://$USER_HOME$/repository/org/eclipse/jetty/http2/http2-client/9.4.35.v20201120/http2-client-9.4.35.v20201120.jar!/" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$PROJECT_DIR$/../../maven/apache-maven-3.3.9/repository/org/eclipse/jetty/http2/http2-client/9.4.35.v20201120/http2-client-9.4.35.v20201120-javadoc.jar!/" />
+      <root url="jar://$USER_HOME$/repository/org/eclipse/jetty/http2/http2-client/9.4.35.v20201120/http2-client-9.4.35.v20201120-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://$PROJECT_DIR$/../../maven/apache-maven-3.3.9/repository/org/eclipse/jetty/http2/http2-client/9.4.35.v20201120/http2-client-9.4.35.v20201120-sources.jar!/" />
+      <root url="jar://$USER_HOME$/repository/org/eclipse/jetty/http2/http2-client/9.4.35.v20201120/http2-client-9.4.35.v20201120-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

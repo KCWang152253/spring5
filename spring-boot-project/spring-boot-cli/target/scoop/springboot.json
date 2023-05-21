@@ -2,7 +2,7 @@
   "homepage": "https://projects.spring.io/spring-boot/",
   "version": "2.2.5",
   "license": "Apache 2.0",
-  "hash": "0443c8e07b1ac5de13ac84564ae1abe7e8cecfd5c03676b5349d25ac9826554c",
+  "hash": "8bf1a0e227f94abcba09d05cecb18589be2708fd69aa2d3323307d7d9c9d5c31",
   "url": "https://repo.spring.io/snapshot/org/springframework/boot/spring-boot-cli/2.2.5.snapshot/spring-boot-cli-2.2.5.snapshot-bin.zip",
   "extract_dir": "spring-2.2.5.snapshot",
   "bin": "bin\\spring.bat",

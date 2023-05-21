@@ -1,13 +1,13 @@
 <component name="libraryTable">
   <library name="Maven: org.neo4j:neo4j-ogm-api:3.2.19">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../../maven/apache-maven-3.3.9/repository/org/neo4j/neo4j-ogm-api/3.2.19/neo4j-ogm-api-3.2.19.jar!/" />
+      <root url="jar://$USER_HOME$/repository/org/neo4j/neo4j-ogm-api/3.2.19/neo4j-ogm-api-3.2.19.jar!/" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$PROJECT_DIR$/../../maven/apache-maven-3.3.9/repository/org/neo4j/neo4j-ogm-api/3.2.19/neo4j-ogm-api-3.2.19-javadoc.jar!/" />
+      <root url="jar://$USER_HOME$/repository/org/neo4j/neo4j-ogm-api/3.2.19/neo4j-ogm-api-3.2.19-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://$PROJECT_DIR$/../../maven/apache-maven-3.3.9/repository/org/neo4j/neo4j-ogm-api/3.2.19/neo4j-ogm-api-3.2.19-sources.jar!/" />
+      <root url="jar://$USER_HOME$/repository/org/neo4j/neo4j-ogm-api/3.2.19/neo4j-ogm-api-3.2.19-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

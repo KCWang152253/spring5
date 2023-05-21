@@ -1,13 +1,13 @@
 <component name="libraryTable">
   <library name="Maven: org.infinispan:infinispan-jcache-commons:9.4.21.Final">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../../maven/apache-maven-3.3.9/repository/org/infinispan/infinispan-jcache-commons/9.4.21.Final/infinispan-jcache-commons-9.4.21.Final.jar!/" />
+      <root url="jar://$USER_HOME$/repository/org/infinispan/infinispan-jcache-commons/9.4.21.Final/infinispan-jcache-commons-9.4.21.Final.jar!/" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$PROJECT_DIR$/../../maven/apache-maven-3.3.9/repository/org/infinispan/infinispan-jcache-commons/9.4.21.Final/infinispan-jcache-commons-9.4.21.Final-javadoc.jar!/" />
+      <root url="jar://$USER_HOME$/repository/org/infinispan/infinispan-jcache-commons/9.4.21.Final/infinispan-jcache-commons-9.4.21.Final-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://$PROJECT_DIR$/../../maven/apache-maven-3.3.9/repository/org/infinispan/infinispan-jcache-commons/9.4.21.Final/infinispan-jcache-commons-9.4.21.Final-sources.jar!/" />
+      <root url="jar://$USER_HOME$/repository/org/infinispan/infinispan-jcache-commons/9.4.21.Final/infinispan-jcache-commons-9.4.21.Final-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

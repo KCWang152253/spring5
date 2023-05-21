@@ -10,86 +10,86 @@
         <module name="spring-boot-antlib" />
         <module name="spring-boot-test-autoconfigure" />
         <module name="spring-boot-starter-cloud-connectors" />
-        <module name="spring-boot-starter-actuator" />
-        <module name="spring-boot-starter-jetty" />
-        <module name="spring-boot-starter-undertow" />
-        <module name="spring-boot-starter-batch" />
-        <module name="spring-boot-starter-data-solr" />
         <module name="spring-boot-starter-groovy-templates" />
+        <module name="spring-boot-starter-jetty" />
+        <module name="spring-boot-starter-batch" />
+        <module name="spring-boot-test-support" />
+        <module name="spring-boot-configuration-processor-tests" />
         <module name="spring-boot-starter-freemarker" />
         <module name="spring-boot-starter" />
         <module name="spring-boot-starter-data-redis" />
         <module name="spring-boot-server-tests" />
         <module name="spring-boot-starter-data-neo4j" />
-        <module name="spring-boot-starter-jta-bitronix" />
+        <module name="spring-boot-starter-oauth2-client" />
         <module name="spring-boot-starter-websocket" />
-        <module name="spring-boot-starter-data-mongodb-reactive" />
-        <module name="spring-boot-test-support" />
         <module name="spring-boot-starter-jersey" />
+        <module name="spring-boot-starter-webflux" />
+        <module name="spring-boot-starter-cache" />
         <module name="spring-boot-starter-rsocket" />
         <module name="spring-boot-starter-json" />
-        <module name="spring-boot-starter-data-couchbase-reactive" />
+        <module name="spring-boot-starter-validation" />
         <module name="spring-boot-configuration-docs" />
         <module name="spring-boot-starter-artemis" />
         <module name="spring-boot-starter-tomcat" />
         <module name="spring-boot-actuator-autoconfigure" />
         <module name="spring-boot-starter-data-couchbase" />
-        <module name="spring-boot-starter-cache" />
-        <module name="spring-boot-properties-migrator" />
+        <module name="spring-boot-loader-tools" />
+        <module name="spring-boot-starter-activemq" />
         <module name="spring-boot-starter-jta-atomikos" />
         <module name="spring-boot-starter-data-rest" />
         <module name="spring-boot-devtools" />
         <module name="spring-boot-starter-data-jpa" />
         <module name="spring-boot-starter-log4j2" />
         <module name="spring-boot-docs" />
-        <module name="spring-boot-starter-web-services" />
+        <module name="spring-boot-starter-oauth2-resource-server" />
         <module name="spring-boot-starter-hateoas" />
         <module name="spring-boot-starter-data-jdbc" />
+        <module name="spring-boot-starter-quartz" />
         <module name="spring-boot-actuator" />
-        <module name="spring-boot-configuration-metadata" />
         <module name="spring-boot-starter-logging" />
         <module name="spring-boot-launch-script-tests" />
         <module name="spring-boot-starter-jdbc" />
-        <module name="spring-boot-loader-tools" />
         <module name="spring-boot-starter-data-cassandra-reactive" />
-        <module name="spring-boot-starter-integration" />
-        <module name="spring-boot-starter-data-cassandra" />
+        <module name="spring-boot-configuration-metadata" />
+        <module name="spring-boot-starter-data-couchbase-reactive" />
         <module name="spring-boot-starter-data-redis-reactive" />
         <module name="spring-boot-loader" />
-        <module name="spring-boot-starter-web" />
-        <module name="spring-boot-starter-amqp" />
-        <module name="spring-boot-starter-oauth2-client" />
-        <module name="juc2021" />
+        <module name="spring-boot-starter-undertow" />
         <module name="spring-boot-maven-plugin" />
+        <module name="spring-boot-starter-data-solr" />
+        <module name="spring-boot-starter-integration" />
+        <module name="spring-boot" />
+        <module name="spring-boot-starter-aop" />
         <module name="spring-boot-test" />
         <module name="spring-boot-starter-thymeleaf" />
-        <module name="spring-boot-starter-quartz" />
+        <module name="spring-boot-starter-web" />
         <module name="spring-boot-starter-reactor-netty" />
         <module name="spring-boot-starter-data-elasticsearch" />
-        <module name="spring-boot-configuration-processor-tests" />
-        <module name="spring-boot-starter-oauth2-resource-server" />
-        <module name="spring-boot-starter-security" />
+        <module name="spring-boot-properties-migrator" />
         <module name="spring-boot-starter-jooq" />
-        <module name="spring-boot-autoconfigure" />
-        <module name="spring-boot" />
+        <module name="spring-boot-starter-data-mongodb-reactive" />
+        <module name="spring-boot-starter-web-services" />
+        <module name="spring-boot-starter-actuator" />
         <module name="spring-boot-devtools-tests" />
+        <module name="spring-boot-starter-jta-bitronix" />
+        <module name="spring-boot-starter-data-cassandra" />
         <module name="spring-boot-starter-data-ldap" />
         <module name="spring-boot-starter-mustache" />
-        <module name="spring-boot-starter-aop" />
+        <module name="spring-boot-starter-security" />
         <module name="spring-boot-starter-data-mongodb" />
-        <module name="spring-boot-starter-activemq" />
-        <module name="spring-boot-starter-validation" />
+        <module name="juc2021" />
+        <module name="spring-boot-starter-amqp" />
         <module name="spring-boot-cli" />
         <module name="spring-boot-starter-mail" />
         <module name="spring-boot-starter-test" />
-        <module name="spring-boot-starter-webflux" />
+        <module name="spring-boot-autoconfigure" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
+    <bytecodeTargetLevel target="11">
       <module name="juc2021" target="1.8" />
       <module name="org.springframework.boot.gradle.plugin" target="1.8" />
       <module name="spring-boot" target="1.8" />
-      <module name="spring-boot-2.2.5" target="1.8" />
+      <module name="spring-boot-2.2.5" target="1.5" />
       <module name="spring-boot-actuator" target="1.8" />
       <module name="spring-boot-actuator-autoconfigure" target="1.8" />
       <module name="spring-boot-antlib" target="1.8" />
@@ -100,7 +100,7 @@
       <module name="spring-boot-configuration-metadata" target="1.8" />
       <module name="spring-boot-configuration-processor" target="1.8" />
       <module name="spring-boot-configuration-processor-tests" target="1.8" />
-      <module name="spring-boot-dependencies" target="1.8" />
+      <module name="spring-boot-dependencies" target="1.5" />
       <module name="spring-boot-devtools" target="1.8" />
       <module name="spring-boot-devtools-tests" target="1.8" />
       <module name="spring-boot-docs" target="1.8" />
@@ -111,7 +111,7 @@
       <module name="spring-boot-loader-tools" target="1.8" />
       <module name="spring-boot-maven-plugin" target="1.8" />
       <module name="spring-boot-parent" target="1.8" />
-      <module name="spring-boot-project" target="1.8" />
+      <module name="spring-boot-project" target="1.5" />
       <module name="spring-boot-properties-migrator" target="1.8" />
       <module name="spring-boot-server-tests" target="1.8" />
       <module name="spring-boot-smoke-tests-invoker" target="1.8" />
@@ -176,7 +176,6 @@
       <module name="spring-boot-test-support" target="1.8" />
       <module name="spring-boot-tests" target="1.8" />
       <module name="spring-boot-tools" target="1.8" />
-      <module name="springboot-kc" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -259,7 +258,6 @@
       <module name="spring-boot-test" options="-parameters" />
       <module name="spring-boot-test-autoconfigure" options="-parameters" />
       <module name="spring-boot-test-support" options="-parameters" />
-      <module name="springboot-kc" options="-parameters" />
     </option>
   </component>
 </project>
