@@ -1,0 +1,34 @@
+plugins {
+	id 'java-gradle-plugin'
+}
+
+repositories {
+	mavenCentral()
+	gradlePluginPortal()
+}
+
+dependencies {
+	implementation "me.champeau.gradle:japicmp-gradle-plugin:0.3.0"
+	implementation "org.gradle:test-retry-gradle-plugin:1.4.1"
+}
+
+gradlePlugin {
+	plugins {
+		apiDiffPlugin {
+			id = "org.springframework.build.api-diff"
+			implementationClass = "org.springframework.build.api.ApiDiffPlugin"
+		}
+		conventionsPlugin {
+			id = "org.springframework.build.conventions"
+			implementationClass = "org.springframework.build.ConventionsPlugin"
+		}
+		optionalDependenciesPlugin {
+			id = "org.springframework.build.optional-dependencies"
+			implementationClass = "org.springframework.build.optional.OptionalDependenciesPlugin"
+		}
+		runtimeHintsAgentPlugin {
+			id = "org.springframework.build.runtimehints-agent"
+			implementationClass = "org.springframework.build.hint.RuntimeHintsAgentPlugin"
+		}
+	}
+}

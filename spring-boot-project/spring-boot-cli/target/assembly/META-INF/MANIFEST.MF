@@ -1,8 +1,0 @@
-Manifest-Version: 1.0
-Implementation-Title: Spring Boot Loader
-Automatic-Module-Name: spring.boot.loader
-Implementation-Version: 2.2.5.snapshot
-Built-By: Spring
-Build-Jdk-Spec: 1.8
-Created-By: Maven Archiver 3.4.0
-

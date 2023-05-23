@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<project name="maven-antrun-" default="main"  >
-<target name="main">
-  <replaceregexp match="\$\{revision\}" replace="2.2.5.snapshot" flags="g" byline="true">
-    <fileset includes="**/*.pom" dir="/Users/kcwang/Documents/jrx/spring-boot-2.2.5/spring-boot-project/spring-boot-tools/spring-boot-maven-plugin/target/local-repo/org/springframework/boot/"/>
-  </replaceregexp>
-</target>
-</project>
