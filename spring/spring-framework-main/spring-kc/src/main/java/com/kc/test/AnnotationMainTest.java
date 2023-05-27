@@ -8,6 +8,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
  * @author KCWang
  * @version 1.0
  *   注解版Spring用法
+ *
  * @date 2022/11/19 11:49 上午
  */
 public class AnnotationMainTest {
