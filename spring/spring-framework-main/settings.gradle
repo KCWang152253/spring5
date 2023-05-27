@@ -9,7 +9,7 @@ pluginManagement {
 
 plugins {
 	id "com.gradle.enterprise" version "3.11.1"
-	id "io.spring.ge.conventions" version "0.0.11"
+//	id "io.spring.ge.conventions" version "0.0.11"
 }
 
 include "spring-aop"
@@ -63,4 +63,5 @@ include 'spring-demo2'
 include 'demo-3'
 include 'demo-3'
 include 'spring-kc'
+
 
