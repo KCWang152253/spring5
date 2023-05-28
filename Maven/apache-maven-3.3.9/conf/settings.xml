@@ -157,13 +157,19 @@ under the License.
       <url>http://my.repository.com/repo/path</url>
     </mirror>
      -->
-    <mirror>
-      <id>alimaven</id>
-      <name>aliyun maven</name>
-      <url>http://maven.aliyun.com/nexus/content/repositories/central/</url>
-      <mirrorOf>central</mirrorOf>
-    </mirror>
+<!--    <mirror>-->
+<!--      <id>alimaven</id>-->
+<!--      <name>aliyun maven</name>-->
+<!--      <url>http://maven.aliyun.com/nexus/content/repositories/central/</url>-->
+<!--      <mirrorOf>central</mirrorOf>-->
+<!--    </mirror>-->
 
+    <mirror>
+      <id>nexus-aliyun</id>
+      <mirrorOf>*</mirrorOf>
+      <name>Nexus aliyun</name>
+      <url>http://maven.aliyun.com/nexus/content/groups/public</url>
+    </mirror>
     <!-- junit镜像地址 -->
     <mirror>
       <id>junit</id>
