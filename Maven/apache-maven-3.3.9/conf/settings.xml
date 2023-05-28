@@ -157,6 +157,8 @@ under the License.
       <url>http://my.repository.com/repo/path</url>
     </mirror>
      -->
+
+<!--    Spring源码编译使用的镜像-->
 <!--    <mirror>-->
 <!--      <id>alimaven</id>-->
 <!--      <name>aliyun maven</name>-->
