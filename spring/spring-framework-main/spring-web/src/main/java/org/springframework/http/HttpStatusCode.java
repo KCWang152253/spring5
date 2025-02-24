@@ -29,7 +29,7 @@ import java.io.Serializable;
  * @see <a href="https://www.iana.org/assignments/http-status-codes">HTTP Status Code Registry</a>
  * @see <a href="https://en.wikipedia.org/wiki/List_of_HTTP_status_codes">List of HTTP status codes - Wikipedia</a>
  */
-//public sealed interface HttpStatusCode extends Serializable permits DefaultHttpStatusCode, HttpStatus {
+//jdk17 密封类需要更新idea的版本d interface HttpStatusCode extends Serializable permits DefaultHttpStatusCode, HttpStatus {
 public  interface HttpStatusCode extends Serializable  {
 	/**
 	 * Return the integer value of this status code.
