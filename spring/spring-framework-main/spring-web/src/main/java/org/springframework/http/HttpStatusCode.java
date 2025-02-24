@@ -16,9 +16,9 @@
 
 package org.springframework.http;
 
-import java.io.Serializable;
-
 import org.springframework.util.Assert;
+
+import java.io.Serializable;
 
 /**
  * Represents an HTTP response status code. Implemented by {@link HttpStatus},
@@ -29,8 +29,8 @@ import org.springframework.util.Assert;
  * @see <a href="https://www.iana.org/assignments/http-status-codes">HTTP Status Code Registry</a>
  * @see <a href="https://en.wikipedia.org/wiki/List_of_HTTP_status_codes">List of HTTP status codes - Wikipedia</a>
  */
-public sealed interface HttpStatusCode extends Serializable permits DefaultHttpStatusCode, HttpStatus {
-
+//public sealed interface HttpStatusCode extends Serializable permits DefaultHttpStatusCode, HttpStatus {
+public  interface HttpStatusCode extends Serializable  {
 	/**
 	 * Return the integer value of this status code.
 	 */

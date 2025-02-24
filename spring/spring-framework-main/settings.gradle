@@ -38,7 +38,7 @@ include "spring-websocket"
 include "framework-bom"
 include "framework-platform"
 include "integration-tests"
-include "spring-demo2"
+//include "spring-demo2"
 
 rootProject.name = "spring"
 rootProject.children.each {project ->
@@ -59,9 +59,9 @@ settings.gradle.projectsLoaded {
 		}
 	}
 }
-include 'spring-demo2'
-include 'demo-3'
-include 'demo-3'
+//include 'spring-demo2'
+//include 'demo-3'
+//include 'demo-3'
 include 'spring-kc'
 
 

@@ -16,21 +16,16 @@
 
 package org.springframework.web;
 
-import java.lang.reflect.Modifier;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.ServiceLoader;
-import java.util.Set;
-
 import jakarta.servlet.ServletContainerInitializer;
 import jakarta.servlet.ServletContext;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.HandlesTypes;
-
 import org.springframework.core.annotation.AnnotationAwareOrderComparator;
 import org.springframework.lang.Nullable;
 import org.springframework.util.ReflectionUtils;
+
+import java.lang.reflect.Modifier;
+import java.util.*;
 
 /**
  * A Spring-provided {@link ServletContainerInitializer} designed to support code-based
@@ -105,7 +100,7 @@ import org.springframework.util.ReflectionUtils;
  * @author Rossen Stoyanchev
  * @since 3.1
  * @see #onStartup(Set, ServletContext)
- * @see WebApplicationInitializer
+ * @see WebApplicationInitializer  spi 案例
  */
 @HandlesTypes(WebApplicationInitializer.class)
 public class SpringServletContainerInitializer implements ServletContainerInitializer {
