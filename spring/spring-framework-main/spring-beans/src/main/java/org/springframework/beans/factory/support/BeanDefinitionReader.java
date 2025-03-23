@@ -32,7 +32,7 @@ import org.springframework.lang.Nullable;
  * <p>Note that a bean definition reader does not have to implement
  * this interface. It only serves as a suggestion for bean definition
  * readers that want to follow standard naming conventions.
- *
+ * Spring 源码核心组件接口
  * @author Juergen Hoeller
  * @since 1.1
  * @see org.springframework.core.io.Resource

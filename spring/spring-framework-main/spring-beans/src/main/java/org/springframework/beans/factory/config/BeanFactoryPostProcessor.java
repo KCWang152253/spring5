@@ -39,7 +39,7 @@ import org.springframework.beans.BeansException;
  * beans in its bean definitions and applies them before any other beans get created.
  * A {@code BeanFactoryPostProcessor} may also be registered programmatically
  * with a {@code ConfigurableApplicationContext}.
- *
+ *  Spring 源码核心组件接口
  * <h3>Ordering</h3>
  * <p>{@code BeanFactoryPostProcessor} beans that are autodetected in an
  * {@code ApplicationContext} will be ordered according to

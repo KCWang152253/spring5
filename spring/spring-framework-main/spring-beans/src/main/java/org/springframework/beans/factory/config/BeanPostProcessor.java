@@ -46,7 +46,7 @@ import org.springframework.lang.Nullable;
  * programmatically registered post-processors. Furthermore, the
  * {@link org.springframework.core.annotation.Order @Order} annotation is not
  * taken into account for {@code BeanPostProcessor} beans.
- * 后置增强组件，研究每一个子接口在何时运行；
+ * 后置增强组件，研究每一个子接口在何时运行；   Spring 源码核心组件接口
  * 在于改变
  * @author Juergen Hoeller
  * @author Sam Brannen

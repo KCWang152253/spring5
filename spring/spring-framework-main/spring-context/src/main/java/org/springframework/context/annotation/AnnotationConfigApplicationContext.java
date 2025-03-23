@@ -43,7 +43,7 @@ import java.util.function.Supplier;
  * {@code @Configuration} class.
  *
  * <p>See {@link Configuration @Configuration}'s javadoc for usage examples.
- *
+ *   Spring 源码核心组件接口
  * @author Juergen Hoeller
  * @author Chris Beams
  * @since 3.0

@@ -90,7 +90,7 @@ import java.util.function.Supplier;
  * <p>For custom application context implementations that are supposed to read
  * special bean definition formats in a refreshable manner, consider deriving
  * from the {@link AbstractRefreshableApplicationContext} base class.
- *
+ *   Spring 源码核心组件接口  我们使用的ioc 容器
  * @author Juergen Hoeller
  * @author Chris Beams
  * @author Stephane Nicoll

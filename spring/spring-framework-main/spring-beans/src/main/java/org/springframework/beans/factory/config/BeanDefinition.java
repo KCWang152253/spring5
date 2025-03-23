@@ -30,7 +30,7 @@ import org.springframework.lang.Nullable;
  * <p>This is just a minimal interface: The main intention is to allow a
  * {@link BeanFactoryPostProcessor} to introspect and modify property values
  * and other bean metadata.
- *
+ *  Spring 源码核心组件接口
  * @author Juergen Hoeller
  * @author Rob Harrop
  * @since 19.03.2004
