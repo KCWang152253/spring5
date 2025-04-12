@@ -26,7 +26,7 @@ import org.springframework.lang.Nullable;
  * {@link org.springframework.context.ApplicationListener} decorator that filters
  * events from a specified event source, invoking its delegate listener for
  * matching {@link org.springframework.context.ApplicationEvent} objects only.
- *
+ *   Spring 源码核心组件接口  Spring mvc 九大组件处理器 基于事件回调进行初始化
  * <p>Can also be used as base class, overriding the {@link #onApplicationEventInternal}
  * method instead of specifying a delegate listener.
  *

@@ -42,7 +42,7 @@ import org.springframework.lang.Nullable;
  * order (and thus a priority) for getting applied by the {@code DispatcherServlet}.
  * Non-Ordered instances get treated as the lowest priority.
  *
- * @author Rod Johnson
+ * @author Rod Johnson Spring 源码核心组件接口  适配器+策略模式
  * @author Juergen Hoeller
  * @see org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter
  * @see org.springframework.web.servlet.handler.SimpleServletHandlerAdapter
