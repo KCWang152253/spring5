@@ -16,13 +16,9 @@
 
 package org.springframework.web.servlet.config.annotation;
 
-import java.lang.annotation.Documented;
-import java.lang.annotation.ElementType;
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
-import java.lang.annotation.Target;
-
 import org.springframework.context.annotation.Import;
+
+import java.lang.annotation.*;
 
 /**
  * Adding this annotation to an {@code @Configuration} class imports the Spring MVC
@@ -89,7 +85,7 @@ import org.springframework.context.annotation.Import;
  *
  * @author Dave Syer
  * @author Rossen Stoyanchev
- * @since 3.1
+ * @since 3.1  Spring 源码核心组件接口  导入mvc基本功能
  * @see org.springframework.web.servlet.config.annotation.WebMvcConfigurer
  * @see org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport
  * @see org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration

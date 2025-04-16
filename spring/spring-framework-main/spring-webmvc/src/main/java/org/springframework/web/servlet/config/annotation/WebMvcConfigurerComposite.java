@@ -16,9 +16,6 @@
 
 package org.springframework.web.servlet.config.annotation;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import org.springframework.format.FormatterRegistry;
 import org.springframework.http.converter.HttpMessageConverter;
 import org.springframework.lang.Nullable;
@@ -29,6 +26,9 @@ import org.springframework.web.method.support.HandlerMethodArgumentResolver;
 import org.springframework.web.method.support.HandlerMethodReturnValueHandler;
 import org.springframework.web.servlet.HandlerExceptionResolver;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * A {@link WebMvcConfigurer} that delegates to one or more others.
  *
@@ -36,7 +36,7 @@ import org.springframework.web.servlet.HandlerExceptionResolver;
  * @since 3.1
  */
 class WebMvcConfigurerComposite implements WebMvcConfigurer {
-
+	//Spring 源码核心组件接口 访问者模式 修改组件
 	private final List<WebMvcConfigurer> delegates = new ArrayList<>();
 
 
