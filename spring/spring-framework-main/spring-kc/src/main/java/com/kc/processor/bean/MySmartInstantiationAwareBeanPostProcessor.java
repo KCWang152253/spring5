@@ -12,7 +12,7 @@ import java.lang.reflect.Constructor;
  * @version 1.0
  * @date 2022/12/8 8:53 下午
  *
- * bean进行代理增强期间进行使用
+ *  Spring 源码核心组件接口    bean进行代理增强期间进行使用   循环依赖时 先生成 aop 动态代理对象
  *
  */
 @Component
