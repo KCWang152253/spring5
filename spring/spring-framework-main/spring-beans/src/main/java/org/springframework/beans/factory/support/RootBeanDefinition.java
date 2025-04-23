@@ -49,7 +49,7 @@ import java.util.function.Supplier;
  * @see GenericBeanDefinition
  * @see ChildBeanDefinition
  *
- * 只知道 RootBeanDefinition 就可以测到Spring的全貌
+ * Spring 源码核心组件接口   每个组件注册都会有这个 只知道 RootBeanDefinition 就可以测到Spring的全貌
  */
 @SuppressWarnings("serial")
 public class RootBeanDefinition extends AbstractBeanDefinition {

@@ -16,14 +16,14 @@
 
 package org.springframework.beans;
 
-import java.beans.PropertyDescriptor;
-import java.lang.reflect.Method;
-
 import org.springframework.core.ResolvableType;
 import org.springframework.core.convert.Property;
 import org.springframework.core.convert.TypeDescriptor;
 import org.springframework.lang.Nullable;
 import org.springframework.util.ReflectionUtils;
+
+import java.beans.PropertyDescriptor;
+import java.lang.reflect.Method;
 
 /**
  * Default {@link BeanWrapper} implementation that should be sufficient
@@ -265,7 +265,7 @@ public class BeanWrapperImpl extends AbstractNestablePropertyAccessor implements
 			return readMethod.invoke(getWrappedInstance(), (Object[]) null);
 		}
 
-		@Override //利用set方法反射赋值
+		@Override //Spring 源码核心组件接口  利用set方法反射赋值
 		public void setValue(@Nullable Object value) throws Exception {
 			// name ->setName
 			Method writeMethod = (this.pd instanceof GenericTypeAwarePropertyDescriptor typeAwarePd ?

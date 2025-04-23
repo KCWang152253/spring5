@@ -351,7 +351,7 @@ public abstract class AbstractBeanFactory extends FactoryBeanRegistrySupport imp
 				beanCreation.end();
 			}
 		}
-		//转Object为Bean的T类型
+		//Spring 源码核心组件接口  将bean原先Object类型转换为真正的类型  转Object为Bean的T类型
 		return adaptBeanInstance(name, beanInstance, requiredType);
 	}
 

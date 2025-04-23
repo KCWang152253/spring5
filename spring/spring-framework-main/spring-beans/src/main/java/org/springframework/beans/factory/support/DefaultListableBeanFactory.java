@@ -883,7 +883,7 @@ public class DefaultListableBeanFactory extends AbstractAutowireCapableBeanFacto
 		// While this may not be part of the regular factory bootstrap, it does otherwise work fine.
 		List<String> beanNames = new ArrayList<>(this.beanDefinitionNames);
 
-		// 创建所有的但实例 Trigger initialization of all non-lazy singleton beans...
+		// Spring 源码核心组件接口 循环 创建剩下所有的单实例bean Trigger initialization of all non-lazy singleton beans...
 		for (String beanName : beanNames) {
 			//开始解析文件的时候每一个Bean标签被解析封装成一个 BeanDefinition
 			RootBeanDefinition bd = getMergedLocalBeanDefinition(beanName);
