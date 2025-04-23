@@ -31,7 +31,7 @@ import org.springframework.util.ResourceUtils;
  * <p>Bean properties of type {@code Resource} and {@code Resource[]} can be populated
  * from Strings when running in an ApplicationContext, using the particular
  * context's resource loading strategy.
- *  Spring 源码核心组件接口
+ *  Spring 源码核心组件接口 资源加载器
  * @author Juergen Hoeller
  * @since 10.03.2004
  * @see Resource
@@ -60,7 +60,7 @@ public interface ResourceLoader {
 	 * you need to invoke {@link Resource#exists} to check for existence.
 	 * @param location the resource location
 	 * @return a corresponding {@code Resource} handle (never {@code null})
-	 * @see #CLASSPATH_URL_PREFIX
+	 * @see #CLASSPATH_URL_PREFIX Spring 源码核心组件接口  读取资源的各种实现类
 	 * @see Resource#exists()
 	 * @see Resource#getInputStream()
 	 */

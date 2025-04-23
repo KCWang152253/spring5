@@ -111,7 +111,7 @@ public class GenericApplicationContext extends AbstractApplicationContext implem
 	private static final Consumer<Builder> asProxiedUserClass = hint ->
 			hint.withMembers(MemberCategory.INVOKE_PUBLIC_METHODS);
 
-
+	//Spring 源码核心组件接口  组合模式
 	private final DefaultListableBeanFactory beanFactory;
 
 	@Nullable

@@ -33,7 +33,7 @@ import java.nio.channels.ReadableByteChannel;
  * <p>An InputStream can be opened for every resource if it exists in
  * physical form, but a URL or File handle can just be returned for
  * certain resources. The actual behavior is implementation-specific.
- * Spring 源码核心组件接口
+ * Spring 源码核心组件接口  资源接口
  * @author Juergen Hoeller
  * @since 28.12.2003
  * @see #getInputStream()

@@ -174,7 +174,7 @@ public abstract class AbstractApplicationContext extends DefaultResourceLoader
 
 	/** ResourcePatternResolver used by this context. */
 	private final ResourcePatternResolver resourcePatternResolver;
-	// 策略模式的环境类   Spring 源码核心组件接口
+	//Spring 源码核心组件接口。策略模式的环境类
 
 	/** LifecycleProcessor for managing the lifecycle of beans within this context. */
 	@Nullable

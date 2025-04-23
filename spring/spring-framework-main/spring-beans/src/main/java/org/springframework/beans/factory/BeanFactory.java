@@ -95,7 +95,7 @@ import org.springframework.lang.Nullable;
  * <li>DisposableBean's {@code destroy}
  * <li>a custom {@code destroy-method} definition
  * </ol>
- *  Spring 源码核心组件接口
+ *  Spring 源码核心组件接口 整个bean容器的根接口 查看所有接口继承树
  * @author Rod Johnson
  * @author Juergen Hoeller
  * @author Chris Beams
