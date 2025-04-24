@@ -144,7 +144,7 @@ public class CglibSubclassingInstantiationStrategy extends SimpleInstantiationSt
 		 * definition, using CGLIB.
 		 */
 		public Class<?> createEnhancedSubclass(RootBeanDefinition beanDefinition) {
-			//cglib创建的代理对象
+			//Spring 源码核心组件接口  cglib创建的代理对象
 			Enhancer enhancer = new Enhancer();
 			enhancer.setSuperclass(beanDefinition.getBeanClass());
 			enhancer.setNamingPolicy(SpringNamingPolicy.INSTANCE);

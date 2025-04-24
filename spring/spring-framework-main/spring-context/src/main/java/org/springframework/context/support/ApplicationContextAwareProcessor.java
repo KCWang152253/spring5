@@ -81,7 +81,7 @@ class ApplicationContextAwareProcessor implements BeanPostProcessor {
 				bean instanceof ApplicationStartupAware)) {
 			return bean;
 		}
-		//Aware 回掉接口
+		//Spring 源码核心组件接口  Aware 回掉接口
 		invokeAwareInterfaces(bean);
 		return bean;
 	}

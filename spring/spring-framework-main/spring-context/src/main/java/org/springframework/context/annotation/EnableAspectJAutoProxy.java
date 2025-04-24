@@ -110,7 +110,7 @@ import java.lang.annotation.Target;
  * <p>This feature requires the presence of {@code aspectjweaver} on the classpath.
  * While that dependency is optional for {@code spring-aop} in general, it is required
  * for {@code @EnableAspectJAutoProxy} and its underlying facilities.
- *
+ *  Spring 源码核心组件接口  通过@Import(AspectJAutoProxyRegistrar.class) 开启 Aop 功能
  * @author Chris Beams
  * @author Juergen Hoeller
  * @since 3.1
