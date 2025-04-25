@@ -49,7 +49,7 @@ import java.util.concurrent.ConcurrentHashMap;
  * {@link AbstractBeanFactory} and {@link DefaultListableBeanFactory}
  * (which inherit from it). Can alternatively also be used as a nested
  * helper to delegate to.
- *  Spring 默认使用的单例Bean 的组册中心
+ * Spring 源码核心组件接口   Spring 默认使用的单例Bean 的组册中心
  * @author Juergen Hoeller
  * @since 2.0
  * @see #registerSingleton

@@ -1347,7 +1347,7 @@ public abstract class AbstractAutowireCapableBeanFactory extends AbstractBeanFac
 				}
 			}
 		}
-		//以上的后置处理器可以中断以下的行为
+		// Spring 源码核心组件接口  PropertyValues 给属性赋值   以上的后置处理器可以中断以下的行为
 		PropertyValues pvs = (mbd.hasPropertyValues() ? mbd.getPropertyValues() : null);
 
 		int resolvedAutowireMode = mbd.getResolvedAutowireMode();
