@@ -467,7 +467,7 @@ public abstract class AbstractAutowireCapableBeanFactory extends AbstractBeanFac
 		}
 
 		try {
-			//提前给我们一个机会去返回组件的代理对象  Give BeanPostProcessors a chance to return a proxy instead of the target bean instance.
+			//Spring 源码核心组件接口 aop 不会在这里提前创建代理对象 提前给我们一个机会去返回组件的代理对象  Give BeanPostProcessors a chance to return a proxy instead of the target bean instance.
 			Object bean = resolveBeforeInstantiation(beanName, mbdToUse);
 			if (bean != null) {
 				return bean;
@@ -563,7 +563,7 @@ public abstract class AbstractAutowireCapableBeanFactory extends AbstractBeanFac
 		try {
 			//Spring 源码核心组件接口   属性赋值  自动装配环节，@AutoWired发生在这里
 			populateBean(beanName, mbd, instanceWrapper);
-			// Spring 源码核心组件接口  初始化bean
+			// Spring 源码核心组件接口  初始化bean   动态代理的后置增强器 AnnotationAwareAspectJAutoProxyCreator  第二次会在初始化时调用
 			exposedObject = initializeBean(beanName, exposedObject, mbd);
 		}
 		catch (Throwable ex) {
@@ -1068,7 +1068,7 @@ public abstract class AbstractAutowireCapableBeanFactory extends AbstractBeanFac
 			if (!mbd.isSynthetic() && hasInstantiationAwareBeanPostProcessors()) {
 				Class<?> targetType = determineTargetType(beanName, mbd);
 				if (targetType != null) {
-					//实际上  大多数情况 bean为null
+					// Spring 源码核心组件接口  AnnotationAwareAspectJAutoProxyCreator 切面的后置处理器尝试返回代理对象  实际上  大多数情况 bean为null
 					bean = applyBeanPostProcessorsBeforeInstantiation(targetType, beanName);
 					if (bean != null) {
 						//把上面返回的对象再加工
@@ -1734,7 +1734,7 @@ public abstract class AbstractAutowireCapableBeanFactory extends AbstractBeanFac
 			throw new BeanCreationException(
 					(mbd != null ? mbd.getResourceDescription() : null), beanName, ex.getMessage(), ex);
 		}
-		if (mbd == null || !mbd.isSynthetic()) {
+		if (mbd == null || !mbd.isSynthetic()) { // Spring 源码核心组件接口  如果是代理对象 此时会生成动态代理对象
 			wrappedBean = applyBeanPostProcessorsAfterInitialization(wrappedBean, beanName);
 		}
 
