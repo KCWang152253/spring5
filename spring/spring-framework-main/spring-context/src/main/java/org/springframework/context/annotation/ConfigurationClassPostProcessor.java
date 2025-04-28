@@ -93,7 +93,7 @@ import java.util.function.Supplier;
  * @author Sam Brannen
  * @since 3.0
  *
- *   Spring 源码核心组件接口   解析配置类的相关操作   所有功能的配置和开启都在配置类
+ *   Spring 源码核心组件接口 内置的工厂后置增强的场景案例 解析配置类的相关操作   所有功能的配置和开启都在配置类
  */
 public class ConfigurationClassPostProcessor implements BeanDefinitionRegistryPostProcessor,
 		BeanRegistrationAotProcessor, BeanFactoryInitializationAotProcessor, PriorityOrdered,
@@ -242,7 +242,7 @@ public class ConfigurationClassPostProcessor implements BeanDefinitionRegistryPo
 	/**
 	 * Derive further bean definitions from the configuration classes in the registry.
 	 */
-	//把配置类中所有bean的定义信息导入进来  解析配置类
+	//Spring 源码核心组件接口 解析配置类 把配置类中所有bean的定义信息导入进来  解析配置类
 	@Override
 	public void postProcessBeanDefinitionRegistry(BeanDefinitionRegistry registry) {
 		int registryId = System.identityHashCode(registry);
@@ -319,7 +319,7 @@ public class ConfigurationClassPostProcessor implements BeanDefinitionRegistryPo
 		List<BeanDefinitionHolder> configCandidates = new ArrayList<>();
 		//拿到所有工厂的bean定义信息
 		String[] candidateNames = registry.getBeanDefinitionNames();
-
+		// Spring 源码核心组件接口  获取处理配置类的后置处理器  类型为 ConfigurationClassPostProcessor
 		for (String beanName : candidateNames) {
 			BeanDefinition beanDef = registry.getBeanDefinition(beanName);
 			if (beanDef.getAttribute(ConfigurationClassUtils.CONFIGURATION_CLASS_ATTRIBUTE) != null) {
@@ -345,13 +345,13 @@ public class ConfigurationClassPostProcessor implements BeanDefinitionRegistryPo
 			return Integer.compare(i1, i2);
 		});
 
-		// Detect any custom bean name generation strategy supplied through the enclosing application context
+		// Spring 源码核心组件接口  单例仓库  Detect any custom bean name generation strategy supplied through the enclosing application context
 		SingletonBeanRegistry sbr = null;
 		if (registry instanceof SingletonBeanRegistry) {
 			sbr = (SingletonBeanRegistry) registry;
 			if (!this.localBeanNameGeneratorSet) {
 				BeanNameGenerator generator = (BeanNameGenerator) sbr.getSingleton(
-						//获取创建一个internalConfigurationBeanNameGenerator来生成配置类的名字
+						// Spring 源码核心组件接口 导入底层组件 获取创建一个internalConfigurationBeanNameGenerator来生成配置类的名字
 						AnnotationConfigUtils.CONFIGURATION_BEAN_NAME_GENERATOR);
 				if (generator != null) {
 					this.componentScanBeanNameGenerator = generator;
@@ -364,7 +364,7 @@ public class ConfigurationClassPostProcessor implements BeanDefinitionRegistryPo
 			this.environment = new StandardEnvironment();
 		}
 
-		//ConfigurationClassParser解析每一个配置类  Parse each @Configuration class
+		//Spring 源码核心组件接口  具体解析配置类 ConfigurationClassParser解析每一个配置类  Parse each @Configuration class
 		ConfigurationClassParser parser = new ConfigurationClassParser(
 				this.metadataReaderFactory, this.problemReporter, this.environment,
 				this.resourceLoader, this.componentScanBeanNameGenerator, registry);
@@ -379,8 +379,8 @@ public class ConfigurationClassPostProcessor implements BeanDefinitionRegistryPo
 
 			Set<ConfigurationClass> configClasses = new LinkedHashSet<>(parser.getConfigurationClasses());
 			configClasses.removeAll(alreadyParsed);
-			//每一个组件都可以当配置类，@Import之类都能进行处理
-			// Read the model and create bean definitions based on its content
+			// Spring 源码核心组件接口 每一个组件都可以当配置类，@Import之类都能进行处理
+			// Spring 源码核心组件接口  Read the model and create bean definitions based on its content
 			if (this.reader == null) {
 				this.reader = new ConfigurationClassBeanDefinitionReader(
 						registry, this.sourceExtractor, this.resourceLoader, this.environment,

@@ -160,7 +160,7 @@ public abstract class AnnotationConfigUtils {
 		}
 
 		Set<BeanDefinitionHolder> beanDefs = new LinkedHashSet<>(8);
-		//给工厂中注册核心组件  Spring底层组件
+		//Spring 源码核心组件接口  给工厂中注册核心组件  各种后置处理器 Spring底层组件
 		if (!registry.containsBeanDefinition(CONFIGURATION_ANNOTATION_PROCESSOR_BEAN_NAME)) {
 			//处理配置类 (BeanFactoryPostProcessor)
 			RootBeanDefinition def = new RootBeanDefinition(ConfigurationClassPostProcessor.class);

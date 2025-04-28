@@ -525,7 +525,7 @@ public abstract class AbstractApplicationContext extends DefaultResourceLoader
 			prepareRefresh();
 
 			// Tell the subclass to refresh the internal bean factory.
-			// 工厂创建 BeanFactory 第一次开始创建的时候，有xml解析逻辑，把Bean的定义信息放进集合中
+			// Spring 源码核心组件接口 拿到所有Bean的定义信息 工厂创建 BeanFactory 第一次开始创建的时候，有xml解析逻辑，把Bean的定义信息放进集合中
 			ConfigurableListableBeanFactory beanFactory = obtainFreshBeanFactory();
 
 			//预准备工厂，给容器中注册了环境信息作为单实例Bean方便后续自动装配；而且放了一些后置处理器处理(监听、XXXAwre功能的) Prepare the bean factory for use in this context.
@@ -536,11 +536,11 @@ public abstract class AbstractApplicationContext extends DefaultResourceLoader
 				postProcessBeanFactory(beanFactory);
 
 				StartupStep beanPostProcess = this.applicationStartup.start("spring.context.beans.post-process");
-				//核心步骤 工厂增强 执行所有BeanFactory的后置增强器；利用BeanFactory的后置增强器对工厂进行修改或者增强 ，配置类也会在这里进行解析
+				//Spring 源码核心组件接口 执行万这一步后 所有的 BeanDefinition 就已经准备就绪  核心步骤 工厂增强 执行所有BeanFactory的后置增强器；利用BeanFactory的后置增强器对工厂进行修改或者增强 ，配置类也会在这里进行解析
 				// Invoke factory processors registered as beans in the context.
 				invokeBeanFactoryPostProcessors(beanFactory);
 
-				//小核心 注册所有的Bean的后置处理器 Register bean processors that intercept bean creation.
+				//Spring 源码核心组件接口  小核心 注册所有的Bean的后置处理器 Register bean processors that intercept bean creation.
 				registerBeanPostProcessors(beanFactory);
 				beanPostProcess.end();
 
@@ -558,7 +558,7 @@ public abstract class AbstractApplicationContext extends DefaultResourceLoader
 				registerListeners();
 
 				// Instantiate all remaining (non-lazy-init) singletons.
-				//Bean创建 完成BeanFactory初始化  大核心步骤
+				//Spring 源码核心组件接口  Bean创建 完成BeanFactory初始化  大核心步骤
 				finishBeanFactoryInitialization(beanFactory);
 
 				//最后的一些清理、事件发布等 Last step: publish corresponding event.
@@ -613,7 +613,7 @@ public abstract class AbstractApplicationContext extends DefaultResourceLoader
 		initPropertySources();
 
 		// Validate that all properties marked as required are resolvable:
-		//准备环境变量信息  see ConfigurablePropertyResolver#setRequiredProperties
+		//Spring 源码核心组件接口  准备环境变量信息  see ConfigurablePropertyResolver#setRequiredProperties
 		getEnvironment().validateRequiredProperties();
 
 		//储存子容器早期运行的一些监听器； Store pre-refresh ApplicationListeners...
@@ -660,12 +660,12 @@ public abstract class AbstractApplicationContext extends DefaultResourceLoader
 	protected void prepareBeanFactory(ConfigurableListableBeanFactory beanFactory) {
 		// Tell the internal bean factory to use the context's class loader etc.
 		beanFactory.setBeanClassLoader(getClassLoader());
-		//解释器模式
+		//Spring 源码核心组件接口  解释器模式   解析 ${} 等spel 表达式
 		beanFactory.setBeanExpressionResolver(new StandardBeanExpressionResolver(beanFactory.getBeanClassLoader()));
 		beanFactory.addPropertyEditorRegistrar(new ResourceEditorRegistrar(this, getEnvironment()));
 
 		//添加一些基本的后置处理器 Configure the bean factory with context callbacks.
-		//准备一个处理Aware接口的后置处理器
+		//Spring 源码核心组件接口  准备一个处理Aware接口的后置处理器 不经过 getBean  流程
 		beanFactory.addBeanPostProcessor(new ApplicationContextAwareProcessor(this));
 		//告诉Spring先别管这些接口，这些有专门的逻辑处理
 		beanFactory.ignoreDependencyInterface(EnvironmentAware.class);
@@ -676,7 +676,7 @@ public abstract class AbstractApplicationContext extends DefaultResourceLoader
 		beanFactory.ignoreDependencyInterface(ApplicationContextAware.class);
 		beanFactory.ignoreDependencyInterface(ApplicationStartupAware.class);
 
-		//注册可以解析到的依赖  BeanFactory interface not registered as resolvable type in a plain factory.
+		//Spring 源码核心组件接口   注册可以解析到的依赖  BeanFactory interface not registered as resolvable type in a plain factory.
 		// MessageSource registered (and found for autowiring) as a bean.
 		beanFactory.registerResolvableDependency(BeanFactory.class, beanFactory);
 		beanFactory.registerResolvableDependency(ResourceLoader.class, this);
@@ -693,7 +693,7 @@ public abstract class AbstractApplicationContext extends DefaultResourceLoader
 			beanFactory.setTempClassLoader(new ContextTypeMatchClassLoader(beanFactory.getBeanClassLoader()));
 		}
 
-		//注册默认的组件；  Register default environment beans.
+		//Spring 源码核心组件接口  单例池的第一个组件   注册默认的组件；  Register default environment beans.
 		if (!beanFactory.containsLocalBean(ENVIRONMENT_BEAN_NAME)) {
 			beanFactory.registerSingleton(ENVIRONMENT_BEAN_NAME, getEnvironment());
 		}

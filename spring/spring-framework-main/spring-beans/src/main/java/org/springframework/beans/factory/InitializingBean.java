@@ -24,7 +24,7 @@ package org.springframework.beans.factory;
  * <p>An alternative to implementing {@code InitializingBean} is specifying a custom
  * init method, for example in an XML bean definition. For a list of all bean
  * lifecycle methods, see the {@link BeanFactory BeanFactory javadocs}.
- * Bean组件初始化后对组件进行后续设置   Spring 源码核心组件接口
+ * Spring 源码核心组件接口  InitializingBean  Bean组件初始化后对组件进行后续设置
  * 在于额外的处理
  * @author Rod Johnson
  * @author Juergen Hoeller

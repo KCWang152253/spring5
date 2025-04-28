@@ -66,10 +66,10 @@ public class AnnotationConfigApplicationContext extends GenericApplicationContex
 	 */
 	public AnnotationConfigApplicationContext() {
 		StartupStep createAnnotatedBeanDefReader = this.getApplicationStartup().start("spring.context.annotated-bean-reader.create");
-		//读取器  读取 BeanDefinition后续是为了加载底层功能组件的后置处理器
+		//Spring 源码核心组件接口  读取器  读取 BeanDefinition后续是为了加载底层功能组件的后置处理器
 		this.reader = new AnnotatedBeanDefinitionReader(this);
 		createAnnotatedBeanDefReader.end();
-		//扫描器 会准备环境变量等一些信息
+		//Spring 源码核心组件接口  扫描器 会准备环境变量等一些信息
 		this.scanner = new ClassPathBeanDefinitionScanner(this);
 	}
 
@@ -90,10 +90,10 @@ public class AnnotationConfigApplicationContext extends GenericApplicationContex
 	 * {@link Configuration @Configuration} classes
 	 */
 	public AnnotationConfigApplicationContext(Class<?>... componentClasses) {
-		//模版模式
+		//Spring 源码核心组件接口  模版模式
 		this();
-		register(componentClasses);
-		//容器完整刷新，(创建出所有组件，组织好所有功能)
+		register(componentClasses);  // Spring 源码核心组件接口 所有组件的bd 信息全部注册。包括底层核心组件和我们自己定义的一些组件
+		// Spring 源码核心组件接口  容器完整刷新，(创建出所有组件，组织好所有功能)
 		refresh();
 	}
 
@@ -169,7 +169,7 @@ public class AnnotationConfigApplicationContext extends GenericApplicationContex
 		Assert.notEmpty(componentClasses, "At least one component class must be specified");
 		StartupStep registerComponentClass = this.getApplicationStartup().start("spring.context.component-classes.register")
 				.tag("classes", () -> Arrays.toString(componentClasses));
-		//reader 注册所有的主配置类
+		//Spring 源码核心组件接口  reader 注册所有的主配置类
 		this.reader.register(componentClasses);
 		registerComponentClass.end();
 	}

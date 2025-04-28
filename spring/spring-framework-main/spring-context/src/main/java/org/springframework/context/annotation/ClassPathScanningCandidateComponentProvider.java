@@ -423,7 +423,7 @@ public class ClassPathScanningCandidateComponentProvider implements EnvironmentC
 					logger.trace("Scanning " + resource);
 				}
 				try {
-					//生成每一个资源的元数据信息   反射
+					//Spring 源码核心组件接口   每个类都是一个资源  生成每一个资源的元数据信息   反射
 					MetadataReader metadataReader = getMetadataReaderFactory().getMetadataReader(resource);
 					//如果当前类在扫描范围
 					if (isCandidateComponent(metadataReader)) {

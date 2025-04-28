@@ -86,7 +86,7 @@ public class AnnotatedBeanDefinitionReader {
 		Assert.notNull(environment, "Environment must not be null");
 		this.registry = registry;
 		this.conditionEvaluator = new ConditionEvaluator(registry, environment, null);
-		//注册一个注解配置的处理器
+		//Spring 源码核心组件接口  在reader时 预先注册 各种核心的后置处理器 目前还没有初始化 注册一个注解配置的处理器
 		AnnotationConfigUtils.registerAnnotationConfigProcessors(this.registry);
 	}
 
@@ -261,7 +261,7 @@ public class AnnotatedBeanDefinitionReader {
 		ScopeMetadata scopeMetadata = this.scopeMetadataResolver.resolveScopeMetadata(abd);
 		abd.setScope(scopeMetadata.getScopeName());
 		String beanName = (name != null ? name : this.beanNameGenerator.generateBeanName(abd, this.registry));
-		//完善主配置类的BeanDefinition：解析各种注解，处理常规的注解定义信息
+		//Spring 源码核心组件接口   完善主配置类的BeanDefinition：解析各种注解，处理常规的注解定义信息
 		AnnotationConfigUtils.processCommonDefinitionAnnotations(abd);
 		//是否有要求  注册带了哪些注解的bean
 		if (qualifiers != null) {
