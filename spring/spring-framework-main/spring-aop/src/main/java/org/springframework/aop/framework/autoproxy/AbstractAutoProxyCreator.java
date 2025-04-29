@@ -266,7 +266,7 @@ public abstract class AbstractAutoProxyCreator extends ProxyProcessorSupport
 	@Override
 	public Object postProcessBeforeInstantiation(Class<?> beanClass, String beanName) {
 		Object cacheKey = getCacheKey(beanClass, beanName);
-		//  Spring 源码核心组件接口  AnnotationAwareAspectJAutoProxyCreator  判断要不要创建代理对象
+		//  Spring 源码核心组件接口  AnnotationAwareAspectJAutoProxyCreator  判断要不要创建代理对象。advisedBeans是否分析过 而非增强过
 		if (!StringUtils.hasLength(beanName) || !this.targetSourcedBeans.contains(beanName)) {
 			if (this.advisedBeans.containsKey(cacheKey)) {
 				return null;
@@ -308,7 +308,7 @@ public abstract class AbstractAutoProxyCreator extends ProxyProcessorSupport
 	public Object postProcessAfterInitialization(@Nullable Object bean, String beanName) {
 		if (bean != null) {
 			Object cacheKey = getCacheKey(bean.getClass(), beanName);
-			if (this.earlyProxyReferences.remove(cacheKey) != bean) {
+			if (this.earlyProxyReferences.remove(cacheKey) != bean) { // Spring 源码核心组件接口  解决循环引用
 				return wrapIfNecessary(bean, beanName, cacheKey);
 			}
 		}
@@ -351,7 +351,7 @@ public abstract class AbstractAutoProxyCreator extends ProxyProcessorSupport
 		if (Boolean.FALSE.equals(this.advisedBeans.get(cacheKey))) {
 			return bean;
 		}
-		// Spring 源码核心组件接口  判断是否增强
+		// Spring 源码核心组件接口 aop 后置处理器第二次 判断是否跳过aop后置处理器的增强
 		if (isInfrastructureClass(bean.getClass()) || shouldSkip(bean.getClass(), beanName)) {
 			this.advisedBeans.put(cacheKey, Boolean.FALSE);
 			return bean;

@@ -16,25 +16,20 @@
 
 package org.springframework.util;
 
-import java.lang.reflect.Constructor;
-import java.lang.reflect.Field;
-import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Method;
-import java.lang.reflect.Modifier;
-import java.lang.reflect.UndeclaredThrowableException;
+import org.springframework.lang.Nullable;
+
+import java.lang.reflect.*;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
-
-import org.springframework.lang.Nullable;
 
 /**
  * Simple utility class for working with the reflection API and handling
  * reflection exceptions.
  *
  * <p>Only intended for internal use.
- *
+ *。Spring 源码核心组件接口 Spring的工具类
  * @author Juergen Hoeller
  * @author Rob Harrop
  * @author Rod Johnson
