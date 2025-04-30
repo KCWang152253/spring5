@@ -28,7 +28,7 @@ import org.springframework.lang.Nullable;
  * @since 2.5
  */
 public final class ProxyCreationContext {
-
+	//  Spring 源码核心组件接口  有特定名字的 ThreadLocal
 	/** ThreadLocal holding the current proxied bean name during Advisor matching. */
 	private static final ThreadLocal<String> currentProxiedBeanName =
 			new NamedThreadLocal<>("Name of currently proxied bean");
